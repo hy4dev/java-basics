@@ -28,7 +28,7 @@
 
 */
 
-public class _1_Syntax {
+public class _1_Syntax { // The class name must match the filename.
     public static void main(String[] args) {
       System.out.println("Welcome to Java Programming!");
     }

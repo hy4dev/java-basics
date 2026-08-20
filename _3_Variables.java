@@ -60,43 +60,57 @@ CONSTANTS
 
 public class _3_Variables {
     public static void main(String[] args) {
+
+        // Declaring variables.
         String name = "John";
-        int myNum; // Declaring a variable without assigning a value.
+        int myNum; // Declaring a variable, myNum without assigning a value.
         float myFloatNum = 5.99f;
         char myLetter = 'D';
         boolean myBool = true;
 
         myNum = 15; // Assigning a value to myNum.
         
-        System.out.println(name);
-        System.out.println(myNum);
-        System.out.println(myFloatNum);
-        System.out.println(myLetter);
-        System.out.println(myBool);
+        System.out.println("**Displaying Variables**");
+        System.out.println("name: " + name);
+        System.out.println("myNum: " + myNum);
+        System.out.println("myFloatNum: " + myFloatNum);
+        System.out.println("myLetter: " + myLetter);
+        System.out.println("myBool: " + myBool + "\n"); 
+        // "\n" adds a new line after the output.
         
+        System.out.println("**Changing Variable Values**");
         myFloatNum = 10.50f; // Assigning a new value to myFloatNum.
-        System.out.println("New myFloatNum = " + myFloatNum); // To combine both text and a variable, use the + character.
+        System.out.println("New myFloatNum = " + myFloatNum + "\n"); 
 
+        System.out.println("**Displaying Combined Values**");
         String firstName = "John";
         String lastName = "Doe";
-        System.out.println("Full name: " +firstName + " " + lastName); // + character to display a variable with another variable.
+        // + character to display a variable with another variable.
+        System.out.println("Full name: " + firstName + " " + lastName + "\n"); 
 
+        System.out.println("**Displaying Text and Numbers**");
         int x = 5;
         int y = 10;
-        System.out.println("Sum of x and y: " + (x + y)); // x + y in parentheses (number addition).
+
+        System.out.println("x + y in Parentheses");
+        // x + y in parentheses (number addition).
+        System.out.println("Sum of x and y: " + (x + y) + "\n"); 
         
         // Be careful when combining text and numbers in the same line of code. 
         // Without parentheses, Java will treat the numbers as text after the first string.
         
-        System.out.println("Sum of x and y: " + x + y); // x + y without parentheses (string concatenation).
+        System.out.println("x + y Not in Parentheses");
+        // x + y without parentheses (string concatenation).
+        System.out.println("Sum of x and y: " + x + y + "\n"); 
 
         // Example
-        System.out.println("Calculate the Area of a Rectangle");
+        System.out.println("**Calculate the Area of a Rectangle**");
         int length = 5;
         int width = 3;
         int area;
 
         area = length * width;
         System.out.println("Area of rectangle is " + area);
+        
     }
 }
