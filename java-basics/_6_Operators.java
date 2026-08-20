@@ -174,11 +174,25 @@ public class _6_Operators {
         System.out.println("\n**Operator Precedence");
 
         // PEMDAS
-        int result1 = 2 + 3 * 4;    // Calculate multiplication first.
-        int result2 = (2 + 3) * 4;  // Calculate in parentheses first.
+        // Subtraction and addition are done from left to right, unless you add parentheses.
+        int result1 = 10 - 2 + 5;    // (10 - 2) + 5 = 13
+        int result2 = 10 - (2 + 5);  // 10 - 7 = 3
 
         System.out.println("result1: " + result1);
-        System.out.println("result2: " + result2);
+        System.out.println("result2: " + result2 + "\n");
+
+        // Same case for division and multiplication.
+        int result3 = 10 / 2 * 5;    
+        int result4 = 10 / (2 * 5);  
+
+        System.out.println("result3: " + result3);
+        System.out.println("result4: " + result4 + "\n");
+
+        int result5 = 2 + 3 * 4;    // Calculate multiplication first.
+        int result6 = (2 + 3) * 4;  // Calculate in parentheses first.
+
+        System.out.println("result5: " + result5);
+        System.out.println("result6: " + result6);
 
     }
 }
